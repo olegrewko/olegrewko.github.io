@@ -1,0 +1,509 @@
+html {
+    font-size: 100%;
+    
+    
+}
+section, iframe, div {
+    margin: 0;
+    padding: 0;
+   }
+body {
+   
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+ 
+}
+
+
+img {
+    width: 100%;
+    margin-top: 0;
+}
+
+a: visited {
+     color: blue;
+}
+a:hover {
+ 
+    
+    color: lightgray;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.lightgray {
+    color: lightgray;
+}
+
+.whitesmoke {
+    background:#303441;
+    color: whitesmoke;
+    text-decoration: none;
+    text-decoration-line: none;
+    list-style-type: none;
+    
+}
+.grey {
+    font-family: 'Montserrat', sans-serif;
+    
+    color: grey;
+    
+
+}
+
+.roll { position: relative; display: inline-block; }
+.rollover { position: absolute; top: 0; left:0; }
+.roll .rollover { display: none; }
+.roll:hover .rollover { display: block; }
+hr { border-top: 0px solid #e4e7e9; margin-bottom: 25px; margin-top: 25px; }
+.footer{ 
+  /* background: #263846;*/
+  background:#263846;
+   padding-top: 30px;
+    color: #636e74;
+     font-weight: 300;
+      font-size: 1rem;
+      
+      
+     }
+     
+.footer-line { 
+    border-color:  #636e74; }
+
+.footer-title {
+     font-size: 24px; font-weight: 600; margin-bottom: 30px; color: #fff; }
+.footer-widget 
+
+  {  font-size: 0.85rem; color:#fff; display: inline-block; font-weight: 300;  padding-bottom: 0px; line-height: 0.7; }
+
+
+
+.tiny-footer { font-size: 10px; padding-top: 15px; padding-bottom:5px; font-weight: 600; background-color: transparent; border-top: 1px solid #636e74; color: #888d90; line-height: 1.5; }
+
+
+.mlwh {
+	
+	color: gray;
+    font-weight: 400;
+    font-size:1.5rem;
+    line-height: 1;
+	margin-bottom: 5px;
+}
+.w200 { 
+	border: 0px solid transparent;
+	height: auto;
+	
+	
+	
+	
+	
+	
+	display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin:0 auto;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+ 
+    font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size:1.1rem;
+	color: rgba(0,93,108);
+}
+.w300 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin:0 auto;
+    justify-content: center;
+    box-align: center;
+}
+.w400 {
+    border: 0px solid transparent;
+
+	
+	
+	
+	
+	
+	
+	display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin:0 auto;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.dummy {
+    height: 0.5rem;
+}
+
+ul li {
+    background:#263846;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 0;
+}
+ul.menu {
+    background:#263846;
+    z-index: 1;
+    text-decoration: none;
+}
+li.menu-text {
+    background:#263846;
+    color: whitesmoke ;
+    text-decoration: none;
+    
+}
+
+.orange {
+  /*  color: orange;*/
+  color: cadetblue;
+}
+
+.blue {
+    
+    color: #263846;
+    
+}
+.waterblue {
+    background: cadetblue;
+}
+
+.myframegmap {
+
+    border: 1px solid #f6f5f0;
+    border-radius: 2px;
+    height: 150px;
+    width: 100%;
+    box-shadow: 0px 0px 0px 0px #e7e4dc;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+
+}
+.top-bar {
+    font-weight: 400;
+}
+.top-bar-right {
+    /* background: #263846;*/ 
+    background: #263846;
+   }
+
+  .top-bar-left {
+    background: #263846; 
+  /* background: #263846;*/
+  }
+  .top-bar {
+    background: #263846;
+  /*background: #263846;*/ 
+   
+  }
+ h1, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+   
+  }
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;  
+  }
+  h4 {
+     /* color: #0C3E5F;*/
+      
+  }
+  
+  p {
+    
+    font-weight: 500;  
+  } 
+   dt {
+    font-weight: 300; 
+    color: #0C3E5F;
+  }
+  .grey {
+   
+
+      color: grey;
+  }
+  .bl {
+       
+   color: grey;
+}
+.fl {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+   
+    
+}
+.flaround {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: center;
+}
+.cs209 {
+    height: 184px;
+}
+.cs120 {
+    height: 100px;
+    width: 100px;
+}
+.shadow {
+    -webkit-box-shadow: 0px 5px 10px -2px rgba(104, 104, 104,1);
+     -moz-box-shadow: 0px 5px 10px -2px rgba(100,100,100,1);
+     box-shadow: 0px 5px 10px -2px rgba(100,100,100,1);
+  }
+@media (max-width: 640px) {
+    .mlwh{
+      font-size: 1.2rem;
+     }
+    
+  }
+@media (max-width: 1000px) {
+    iframe{
+      width: 600px;
+      height: 300px;
+     }
+}     
+@media (max-width: 600px) {
+        iframe{
+          width: 200px;
+          height: 150px;
+         }    
+  }
+  @media (max-width: 600px) {
+    .clearfix .large .callout{
+      background: #E1FAEA;
+     }    
+}
+@media (max-width: 965px) {
+    .big {
+        display: block;
+        text-align: center;
+     }    
+}
+@media (max-width: 600px) {
+    .logotext  {
+        font-size: 1rem;
+        font-weight: 500; 
+        display: block;
+        text-align: center;
+        
+     }    
+}     
+.iframedflex {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0;
+  }
+
+.anim01 {
+    animation-name: move;
+    animation-duration: 3s;
+    -webkit-animation: move  3s; 
+   -o-animation: move  3s; 
+   animation: move  3s; 
+
+}
+@keyframes move {
+    from {
+        margin-right: 0;
+    }
+    to {
+        margin-right: 50%;
+    }
+}
+
+.mtp {
+    margin-top: 30px;
+}
+.mtmb {
+    box-sizing: content-box;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.example2 {
+    display:inline-block;   
+    position:relative;
+ 
+}
+.example2 span {
+    display:inline-block;
+    position:absolute;
+    
+    
+    top: 5%;   
+    left: 0%;
+    
+    /* Оформление текста */
+    color: #263846;
+    font-family: 'Montserrat', sans-serif;
+    
+     
+    /* Фон */
+    background-color:rgba(143, 144, 145, 0);
+    margin:  10% 10% 0% 5%;
+     
+    
+}
+.sublogotext {
+    display: inline-block;
+    position: absolute;
+    
+    
+    top:0%;   
+    left:0%;
+    
+    /* Оформление текста */
+    color: #263846;
+    font-family: 'Montserrat', sans-serif;
+    
+     
+    /* Фон */
+   
+
+}
+.example3 {
+    display:inline-block;   
+    position:relative;
+ 
+}
+.example3 span {
+    display:inline-block;
+    position:absolute;
+    
+    
+    top:30%;   
+    left:5%;
+    
+    /* Оформление текста */
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    
+     
+    /* Фон */
+    background-color:rgba(143, 144, 145, 0);
+    margin:  0% 0% 0% 0%;
+     
+    
+}
+
+.audit {
+ height: 10rem;   
+ background: #263846;
+
+}
+.big {
+    color: #636e74;
+    font-weight: 300;
+    font-size:5rem;
+}
+@media (max-width: 930px) {
+    .example2 span {
+        display:inline-block;
+        position:absolute;
+        top:0%;   
+        left:0%;
+        margin:  2% 10% 0% 10%;
+     }    
+}
+.white {
+    background: #F4F3F4;
+}
+
+.pink {
+    color: #78C1B0;
+  
+   
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+ 
+.v {
+    color: #E6F4F3;
+}
+.greybackground {
+    background: #EAEAEA;
+}
+p {
+    font-size: 1rem;
+}
+
+.social {
+    border-bottom: 0px solid #636e74;
+    margin-bottom: 0px ;
+   /* background:#05445C;*/
+   background: #0C3E5F;
+
+    padding-top: 0.3rem;
+    padding-bottom: 0.7rem;
+     color: #636e74;
+      font-weight: 300;
+       font-size: 1rem;
+}
+.lgreen {
+    background: #78C1B0;
+
+.form {
+    
+    padding: 4rem 5rem;
+    text-align: center;
+}
+.main-form {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.main-form-header {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+input {
+    display: block;
+    border: 1px solid maroon;
+    width: 100%;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.main {
+    height: 800px;
+    background: url(../images/girl2000.jpg) center center  no-repeat;
+    background-size: cover;
+  
+}
+
+.success {
+    background: #E1FAEA;
+}
+.secondary {
+    background: #EAEAEA;
+}
+.hhrr {
+    border-bottom: 1px solid lightgray;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.lightgraybackground {
+    background: lightgray;
+}
+/*
+
+@media (max-width: 430px) {
+    .main {
+       background-position: top left;
+     }    
+}
+
+*/
+section {
+
+}
