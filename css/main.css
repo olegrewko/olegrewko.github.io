@@ -15,6 +15,14 @@ body {
     font-size: 1rem;
  
 }
+.headertext {
+	
+	color: gray;
+    font-weight: 600;
+    font-size:5rem;
+    line-height: 1;
+	margin-bottom: 5px;
+}
 
 
 img {
@@ -22,7 +30,7 @@ img {
     margin-top: 0;
 }
 
-a: visited {
+a:visited {
      color: blue;
 }
 a:hover {
@@ -38,7 +46,7 @@ a:hover {
 }
 
 .whitesmoke {
-    background:#303441;
+   /* background:#303441;*/
     color: whitesmoke;
     text-decoration: none;
     text-decoration-line: none;
