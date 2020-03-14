@@ -17,11 +17,11 @@ body {
 }
 .headertext {
 	
-	color: gray;
-    font-weight: 600;
-    font-size:5rem;
-    line-height: 1;
-	margin-bottom: 5px;
+	color: rgb(66, 65, 65);
+    font-weight: 300;
+    font-size:6.2rem;
+   /* line-height: 1;*/
+	margin-top: 200px;
 }
 
 
@@ -260,7 +260,7 @@ li.menu-text {
     height: 184px;
 }
 .cs120 {
-    height: 100px;
+    height: 80px;
     width: 100px;
 }
 .shadow {
@@ -514,4 +514,7 @@ input {
 */
 section {
 
+}
+.maroon {
+    color: maroon;
 }
