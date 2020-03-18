@@ -19,21 +19,23 @@ body {
 	
 	color: rgb(66, 65, 65);
     font-weight: 300;
-    font-size:6.2rem;
+    font-size:5.5rem;
    /* line-height: 1;*/
 	
 }
-
+p { 
+    padding-right: 1 rem;
+}
 
 img {
     width: 100%;
     margin-top: 0;
 }
-/*
+
 a:visited {
-     color: blue;
+     color:blue ;
 }
-*/
+
 a:hover {
  
     
