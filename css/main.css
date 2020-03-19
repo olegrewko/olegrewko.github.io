@@ -13,10 +13,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 1rem;
+    overflow-x: hidden;
  
 }
-.yellow {
-    background-color: rgba(249,206,0,1);
+
+.blue {
+    background-color:rgba(0,129,138,0.1) ;
 }
 .headertext {
 	
@@ -348,6 +350,7 @@ li.menu-text {
     margin-top: 1px;
     margin-bottom: 1px;
 }
+/*
 .example2 {
     display:inline-block;   
     position:relative;
@@ -361,17 +364,18 @@ li.menu-text {
     top: 5%;   
     left: 0%;
     
-    /* Оформление текста */
+  
     color: #263846;
     font-family: 'Montserrat', sans-serif;
     
      
-    /* Фон */
+    
     background-color:rgba(143, 144, 145, 0);
     margin:  10% 10% 0% 5%;
      
     
 }
+*/
 .sublogotext {
     display: inline-block;
     position: absolute;
@@ -514,18 +518,7 @@ input {
 .lightgraybackground {
     background: lightgray;
 }
-/*
 
-@media (max-width: 430px) {
-    .main {
-       background-position: top left;
-     }    
-}
-
-*/
-section {
-
-}
 .maroon {
     color: maroon;
 }
