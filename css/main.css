@@ -16,6 +16,9 @@ body {
     overflow-x: hidden;
  
 }
+.yellow {
+    background-color:#F9CE00 ;
+}
 .df {
     display: flex;
     align-items: flex-end;
@@ -28,7 +31,7 @@ body {
 	
 	color: rgb(66, 65, 65);
     font-weight: 300;
-    font-size:5.5rem;
+    font-size:5.0rem;
    /* line-height: 1;*/
 	
 }
