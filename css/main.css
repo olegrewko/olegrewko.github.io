@@ -162,10 +162,11 @@ hr { border-top: 0px solid #e4e7e9; margin-bottom: 25px; margin-top: 25px; }
     align-items: center;
   
 }
+
 .dummy {
     height: 1rem;
 }
-.dummy08 {
+.dummy04 {
     height: 4rem;
 }
 .dummy02 {
@@ -191,7 +192,7 @@ li.menu-text {
 }
 
 .whitesmoke {
-  /*  color: orange;*/
+  
   color: whitesmoke;
 }
 
@@ -233,13 +234,14 @@ li.menu-text {
  h1, h2, h3, h4, h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    color: #0C3E5F;
    
   }
 
  
   
   p {
-    
+  
     font-weight: 500;  
   } 
    dt {
@@ -367,51 +369,8 @@ li.menu-text {
    
 
 }
-.example3 {
-    display:inline-block;   
-    position:relative;
- 
-}
-.example3 span {
-    display:inline-block;
-    position:absolute;
-    
-    
-    top:30%;   
-    left:5%;
-    
-    /* Оформление текста */
-    color: gray;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
-    
-     
-    /* Фон */
-    background-color:rgba(143, 144, 145, 0);
-    margin:  0% 0% 0% 0%;
-     
-    
-}
 
-.audit {
- height: 10rem;   
- background: #263846;
 
-}
-.big {
-    color: #636e74;
-    font-weight: 300;
-    font-size:5rem;
-}
-@media (max-width: 930px) {
-    .example2 span {
-        display:inline-block;
-        position:absolute;
-        top:0%;   
-        left:0%;
-        margin:  2% 10% 0% 10%;
-     }    
-}
 .white {
     background: #F4F3F4;
 }
@@ -433,15 +392,17 @@ li.menu-text {
 p {
     font-size: 1rem;
 }
-
+.socialmap {
+    padding-top: 0.4rem;
+    background-color: #263846; 
+}
 .social {
-    border-bottom: 0px solid #636e74;
-    margin-bottom: 0px ;
-   /* background:#05445C;*/
-   background: #0C3E5F;
+    
+  /*  background:#F9CE00;*/
+   background: #FFAF00;
 
-    padding-top: 0.3rem;
-    padding-bottom: 0.7rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.1rem;
      color: #636e74;
       font-weight: 300;
        font-size: 1rem;
