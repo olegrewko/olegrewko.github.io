@@ -7258,7 +7258,7 @@ a.thumbnail image {
 }
 
 .top-bar {
-  background-color: #263846;
+  /* background-color: #263846; */
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7279,11 +7279,8 @@ a.thumbnail image {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.top-bar,
-.top-bar ul {
-  /* background-color: #e6e6e6;*/
-  background-color: #263846;
-}
+
+
 .top-bar input {
   max-width: 200px;
   margin-right: 1rem;
@@ -7297,7 +7294,7 @@ a.thumbnail image {
 }
 .top-bar .top-bar-left,
 .top-bar .top-bar-right {
-  background-color: #263846;
+  /* background-color: #263846; */
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
@@ -7367,7 +7364,7 @@ a.thumbnail image {
 
 .top-bar-left,
 .top-bar-right {
-  background: #0c3e5f;
+ 
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
