@@ -162,19 +162,19 @@ body {
   line-height: 1.1;
 }
 
-.grey6rem {
+.grey6rem{
   /* font-family: 'Montserrat'; */
   color: #191D27;
   font-weight: 600;
-  font-size: 6rem;
-  line-height: 1.5;
+  font-size: 3.5rem;
+  line-height: 1.1;
 }
 .grey5rem {
   /* font-family: 'Montserrat'; */
   color: #191D27;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 3rem;
-  line-height: 1.5;
+  line-height: 1.1;
 
 }
 
@@ -382,7 +382,7 @@ li.menu-text {
 }
 .top-bar {
   /* background-color: #263846; */
-  font-weight: 400;
+  font-weight: 500;
 }
 
 
@@ -398,12 +398,12 @@ h5 {
 p, li, a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 0.7rem;
-  color: #55585f;
+  font-size: 0.8rem;
+  color: #585b5e;
 
 }
 a:hover {
-  color: rgb(236, 225, 225);
+  color: #263846;
   text-decoration: none;
   transition: 0.5s;
 }
