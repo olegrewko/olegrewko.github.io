@@ -140,7 +140,7 @@ body {
 }
 
 .offcanvas-full-screen-menu a:hover {
-  color: #b2b2b2;
+  color: #eee7e7;
 }
 
 .offcanvas-full-screen-close {
@@ -189,7 +189,7 @@ body {
 }
 
 .blue {
-  color: rgb(14, 215, 230);
+  color: rgb(2, 20, 59);
 }
 .headertext {
   color: rgb(66, 65, 65);
@@ -209,7 +209,7 @@ img {
 } */
 
  a:hover {
-  color: lightgray;
+  color: dodgerblue;
   text-decoration: none;
   transition: 0.5s;
 }
@@ -399,7 +399,7 @@ p, li, a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 0.8rem;
-  color: #585b5e;
+  color: #343536;
 
 }
 a:hover {
@@ -576,11 +576,11 @@ input {
   margin: 2rem 0;
 }
 
-.main {
+/* .main {
   height: 800px;
   background: url(../images/girl2000.jpg) center center no-repeat;
   background-size: cover;
-}
+} */
 
 .hhrr {
   border-bottom: 1px solid lightgray;
@@ -593,4 +593,17 @@ input {
 
 .maroon {
   color: maroon;
+}
+#toTop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 25px;
+  right: 10px;
+  overflow: hidden;
+  width: 52px;
+  height: 52px;
+  border: none;
+  text-indent: 100%;
+  background: url(../img/up.png) no-repeat 0px 0px;
 }
