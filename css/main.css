@@ -172,8 +172,8 @@ body {
 .grey5rem {
   /* font-family: 'Montserrat'; */
   color: #191D27;
-  font-weight: 500;
-  font-size: 3rem;
+  font-weight: 400;
+  font-size: 3.2rem;
   line-height: 1.1;
 
 }
@@ -227,8 +227,8 @@ img {
 }
 .grey {
   font-family: "Montserrat", sans-serif;
-
-  color: grey;
+  color: dodgerblue;
+  /* color: lightgrey; */
 }
 
 .roll {
@@ -399,7 +399,8 @@ p, li, a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 0.8rem;
-  color: #343536;
+  line-height: 1.5;
+  color: #191D27;
 
 }
 a:hover {
@@ -410,6 +411,12 @@ a:hover {
 dt {
   font-weight: 300;
   color: black;
+}
+.green{
+  background-color: #3adb76;
+}
+.bound{
+  border: 1px solid #636e74;
 }
 .grey {
   color: grey;
