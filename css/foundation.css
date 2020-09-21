@@ -3486,7 +3486,7 @@ ol.no-bullet {
 }
 .button:hover,
 .button:focus {
-  background-color: #14679e;
+  background-color:black;
   color: #fefefe;
 }
 .button.tiny {
@@ -3505,7 +3505,8 @@ ol.no-bullet {
   margin-left: 0;
 }
 .button.primary {
-  background-color: #1779ba;
+  /* background-color: #1779ba; */
+  background-color: #CFD8DC;
   color: #fefefe;
 }
 .button.primary:hover,
@@ -3517,11 +3518,12 @@ ol.no-bullet {
  /* background-color: #767676;*/
  background-color: #263846;
   color: #fefefe;
+ 
 }
 .button.secondary:hover,
 .button.secondary:focus {
- /* background-color: #5e5e5e;*/
-  background-color: #767676;
+  background-color:black;
+  /* background-color: #767676; */
   color: #fefefe;
 }
 .button.success {
@@ -4821,7 +4823,8 @@ select[multiple] {
   margin-bottom: 0;
 }
 .callout.primary {
-  background-color: #d7ecfa;
+  /* background-color: #d7ecfa; */
+  background-color: #CFD8DC;
   color: #0a0a0a;
 }
 .callout.secondary {

@@ -1,5 +1,6 @@
 html {
   font-size: 100%;
+  background-color: #FEFEFE;
 }
 section,
 iframe,
@@ -8,13 +9,16 @@ div {
   padding: 0;
 }
 body {
+  background-color: #FEFEFE;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   overflow-x: hidden;
+ 
+ 
 }
 
-.offcanvas-full-screen {
+/* .offcanvas-full-screen {
   position: fixed;
   z-index: 1;
   transition: -webkit-transform 0.3s ease-in-out;
@@ -140,7 +144,7 @@ body {
 }
 
 .offcanvas-full-screen-menu a:hover {
-  color: #eee7e7;
+  color: rgb(126, 154, 216);
 }
 
 .offcanvas-full-screen-close {
@@ -150,30 +154,44 @@ body {
 
 .offcanvas-full-screen-close:hover {
   color: #b2b2b2;
-}
+} */
 
 
 /* *************************************** */
-.grey10rem {
+.grey1rem {
+  /* font-family: 'Montserrat'; */
+  /* color: #191D27; */
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 1.1;
+}
+.grey2rem {
   /* font-family: 'Montserrat'; */
   color: #191D27;
-  font-weight: 600;
-  font-size: 10rem;
-  line-height: 1.1;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.grey3rem {
+  /* font-family: 'Montserrat'; */
+  color: #191D27;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.4;
 }
 
 .grey6rem{
   /* font-family: 'Montserrat'; */
   color: #191D27;
-  font-weight: 600;
-  font-size: 3.5rem;
+  font-weight: 500;
+  font-size: 3rem;
   line-height: 1.1;
 }
 .grey5rem {
   /* font-family: 'Montserrat'; */
   color: #191D27;
   font-weight: 400;
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   line-height: 1.1;
 
 }
@@ -201,17 +219,14 @@ body {
 
 img {
   width: 100%;
-  margin-top: 0;
+  
 }
 
-/* a:visited {
-     color:blue ;
-} */
 
  a:hover {
-  color: dodgerblue;
+  color: black;
   text-decoration: none;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .lightgray {
@@ -227,7 +242,7 @@ img {
 }
 .grey {
   font-family: "Montserrat", sans-serif;
-  color: dodgerblue;
+  color: grey;
   /* color: lightgrey; */
 }
 
@@ -252,17 +267,14 @@ hr {
   margin-top: 25px;
 }
 .footer {
-  /* background: #263846;*/
-  background-color: #1d2429;
+ background-color: rgba(8, 32, 46, 0.93);
+  /* background-color: #08202E; */
   padding-top: 30px;
   color: #636e74;
   font-weight: 300;
   font-size: 1rem;
 }
 
-/* .footer-line {
-  border-color: #636e74;
-} */
 
 .footer-title {
   font-size: 24px;
@@ -332,9 +344,7 @@ hr {
   align-items: center;
 }
 
-.dummy {
-  height: 1rem;
-}
+
 .dummy08 {
   height: 4rem;
 }
@@ -348,8 +358,11 @@ ul li {
   margin-left: 0;
 }
 ul.menu {
-  /* background: #263846; */
-
+  display: flex;
+  align-items: center;
+  align-content: center;
+  align-self: baseline;
+  flex-wrap: wrap;
   z-index: 1;
   text-decoration: none;
 }
@@ -380,10 +393,7 @@ li.menu-text {
   position: relative;
   margin: 0 auto;
 }
-.top-bar {
-  /* background-color: #263846; */
-  font-weight: 500;
-}
+
 
 
 h1,
@@ -404,14 +414,11 @@ p, li, a {
 
 }
 a:hover {
-  color: #263846;
+  color: black;
   text-decoration: none;
   transition: 0.5s;
 }
-dt {
-  font-weight: 300;
-  color: black;
-}
+
 .green{
   background-color: #3adb76;
 }
@@ -474,12 +481,7 @@ dt {
   }
   
 }
-/* @media (max-width: 965px) {
-  .big {
-    display: block;
-    text-align: center;
-  }
-} */
+
 @media (max-width: 600px) {
   .logotext {
     font-size: 1rem;
@@ -501,14 +503,14 @@ dt {
   -o-animation: move 3s;
   animation: move 3s;
 }
-@keyframes move {
+/* @keyframes move {
   from {
     margin-right: 0;
   }
   to {
     margin-right: 50%;
   }
-}
+} */
 
 .mtp {
   margin-top: 30px;
@@ -553,10 +555,12 @@ dt {
 
 .socialmap {
   padding-top: 0.4rem;
-  background-color: #1d2429;
+  /* background-color: #08202E; */
+  background-color: rgba(8, 32, 46, 0.93);
 }
 .social {
-  background-color: #1d2429;
+  background-color: rgba(8, 32, 46, 0.93);
+  /* background-color: #08202E; */
     /* border-top: 1px solid #636e74; */
     border-bottom: 0px solid #636e74;
   padding-top: 0.3rem;
@@ -580,13 +584,13 @@ dt {
   margin-bottom: 2rem;
   text-align: center;
 }
-input {
+/* input {
   display: block;
   border: 1px solid maroon;
   width: 100%;
   padding: 1.5rem;
   margin: 2rem 0;
-}
+} */
 
 /* .main {
   height: 800px;
@@ -603,9 +607,7 @@ input {
   background: lightgray;
 }
 
-.maroon {
-  color: maroon;
-}
+
 #toTop {
   display: none;
   text-decoration: none;
