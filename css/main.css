@@ -17,7 +17,15 @@ body {
   
  
 }
+.fullscreen-image-slider .orbit-image {
+  width: 100%;
+  height: 43vh;
+}
+.buscet {
+  display: inline-block;
+  height: 50px;
 
+}
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap'); */
 
 
@@ -72,26 +80,41 @@ body {
   /* font-family: 'Montserrat'; */
   color: #191D27;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.4;
 }
-
-.grey6rem{
+.grey4rem {
   /* font-family: 'Montserrat'; */
   color: #191D27;
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.1;
 }
+.grey6rem{
+  font-family: 'Montserrat';
+  color: #191D27;
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+/* .grey5rem {
+  font-family: 'Montserrat';
+   color: #191D27; 
+  color: black;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 1.1;
+
+}
+ */
 .grey5rem {
-  /* font-family: 'Montserrat'; */
+   font-family: 'Montserrat'; 
   color: #191D27;
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 1.1;
 
 }
-
 
 /* ********************************************************** */
 .yellow {
@@ -239,8 +262,15 @@ hr {
   justify-content: space-between;
   align-items: center;
 }
-
-
+.black {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+.dummy {
+  height: 1rem;
+}
 .dummy08 {
   height: 4rem;
 }
@@ -289,8 +319,14 @@ li.menu-text {
   position: relative;
   margin: 0 auto;
 }
-
-
+.fullscreen-image-slider .orbit-image {
+  width: 100%;
+  height: 33vh;
+}
+.clc {
+  height: auto;
+  background-color: #05445c;
+}
 
 h1,
 h2,
@@ -301,13 +337,16 @@ h5 {
   font-weight: 400;
   color: #191D27;
 }
-p, li, a {
+p, li {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 0.8rem;
   line-height: 1.5;
   color: #191D27;
 
+}
+a {
+  color: maroon;
 }
 a:hover {
   color: black;
@@ -436,7 +475,7 @@ a:hover {
 }
 
 .pink {
-  color: #78c1b0;
+  color: maroon;
 
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
