@@ -424,6 +424,7 @@ a:hover {
     display: block;
     text-align: center;
   }
+ 
 }
 .iframedflex {
   display: flex;
@@ -438,14 +439,7 @@ a:hover {
   -o-animation: move 3s;
   animation: move 3s;
 }
-/* @keyframes move {
-  from {
-    margin-right: 0;
-  }
-  to {
-    margin-right: 50%;
-  }
-} */
+
 
 .mtp {
   margin-top: 30px;
@@ -548,11 +542,13 @@ a:hover {
   text-decoration: none;
   position: fixed;
   bottom: 25px;
-  right: 10px;
+  right: 10px;  
   overflow: hidden;
   width: 52px;
   height: 52px;
   border: none;
   text-indent: 100%;
   background: url(../img/up.png) no-repeat 0px 0px;
+
 }
+
