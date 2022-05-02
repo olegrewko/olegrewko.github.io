@@ -120,6 +120,9 @@ body {
 .yellow {
   color: #f9ce00;
 }
+.maroon {
+  color: maroon;
+}
 .df {
   display: flex;
   align-items: flex-end;
