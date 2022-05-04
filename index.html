@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/main.css">
 
-  
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
   <!-- <script src="http://maps.google.com/maps/api/js?sensor=true"></script>  -->
 </head>
 <body  >
@@ -48,10 +48,10 @@
                   <p>
                   8-925-733-39-38 Азам<br>
                   <a>http://profi.ru/profile/user5648449/?mobileApp=1</a><br>
-                  azamjorzoda@gmail.com<br>
+                  <!-- azamjorzoda@gmail.com<br> -->
                   
-                  <a class="button tiny secondary " onclick="getLocation()">Click the button to get your coordinates.</a>
-                  <p id="demo"></p>
+                  <!-- <a class="button tiny secondary " onclick="getLocation()">Click the button to get your coordinates.</a>
+                  <p id="demo"></p> -->
                 
                   </p>
 
@@ -2152,7 +2152,9 @@
   
 </section>
        
-<!--Footer-->    
+<!--Footer--> 
+<a class="button tiny secondary " onclick="getLocation()">Click the button to get your coordinates.</a>
+<p id="demo"></p>   
 <section class="socialmap social">
      
     <div class="text-center">     
@@ -2161,9 +2163,36 @@
         </div>
         
 </section>        
-<!-- <p id="result">Где вы живете?</p>
-<div id="mapSurface"></div>            -->
-       
+
+<!-- <div id="map" style= "height: 400px; width: 100%"></div>
+<p id="message"></p>
+<script>
+  navigator.geolocation.getCurrentPosition(updatePosition);
+  function updatePosition(pos) {     
+	var position = new google.maps.LatLng(pos.coord.latitude, pos.coords.longitude);
+   document.getElementById("message").innerHTML="Позиция определена с точностью" + pos.coords.accurasy + "метров"
+
+	var options = {
+		zoom: 8,
+		center: position,
+		mapTypeId: google.maps.MapTypeId.HYBRID 
+	}
+	var map = new google.maps.Map(document.getElementById("map"),options);
+  var marker = new google.maps.Marker({
+    position: position,
+    map: map,
+    title: "Это Вы!"
+  })
+  var infowindow = new google.maps.InfoWindow({
+    content: "Ваше местоположение"
+  })
+  google.maps.event.addListener(marker, 'click',
+  function(){
+    infowindow.open(map, marker);
+  }) 
+}
+</script>
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d19540.28510574726!2d37.398505162096086!3d54.736993598820064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0J_Qk9CiINCX0LDQvtC60YHQutC40Lk!5e1!3m2!1sru!2sru!4v1544893715342" width="100%" height="400" frameborder="0"></iframe>      -->
 
     <div id="ten011" class="social">   
       
