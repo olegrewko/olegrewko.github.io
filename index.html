@@ -2165,14 +2165,16 @@
                <p class="black ">
                   <div class="grid-x grid-margin-x">
                    <div class="cell medium-5 large-5"></div>
-                   <div class="cell medium-7 large-7 text-left"> 
+                   <div class="cell medium-7 large-7 text-left">
+                    <p class="black ">    
                  Для определения вашего местоположения нажмите на кнопку:
-               
+               </p>
                  <div   class="dummy"></div>  
                  <a class="button tiny secondary " onclick="getLocation()">Click the button to get your coordinates.</a>
+                 <p id="dem"></p> 
                  <p id="demo"></p> 
                  
-                   
+                 
                    </p>
                   </div>
                   <div class="cell medium-0 large-0"> </div> 
@@ -2593,7 +2595,9 @@
  
 <p id="demo"></p> -->
  <script>
+  var y = document.getElementById("dem"); 
   var x = document.getElementById("demo");
+  
   function getLocation() {
       if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(showPosition);
@@ -2602,6 +2606,8 @@
       }
   }
   function showPosition(position) {
+
+      y.innerHTML = "Ваши координаты:<br> ";
       x.innerHTML = "Latitude: " + position.coords.latitude +
       "<br>Longitude: " + position.coords.longitude;
   }
