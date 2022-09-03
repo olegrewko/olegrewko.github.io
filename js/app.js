@@ -1,4 +1,4 @@
-$(document).foundation();
+// $(document).foundation();
 // Геолокация
 // var results;
 // var map;
