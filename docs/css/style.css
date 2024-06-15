@@ -177,6 +177,8 @@ textarea {
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
+  border: none;
+  
 }
 
 /**
@@ -184,9 +186,17 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 
-button,
+/* button, */
 input { /* 1 */
+  width: 100%;   
   overflow: visible;
+  border: none;
+  height: 40px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding: 0 0px;
+    margin-bottom: 10px;
+    background-color: transparent;
 }
 
 /**
@@ -538,6 +548,7 @@ li {
 .project,
 .job,
 .job02,
+.t,
 .heat,
 .septic,
 .blog,
@@ -1039,7 +1050,7 @@ align-items: flex-start;
 
 }
 form:focus-within {
-     background: #eee;
+     background: #fff;
      color: black;
  }
 .video-left,
@@ -1181,6 +1192,7 @@ form:focus-within {
       color: black;
 		} 
 .contacts__form {
+      background-color: #fff;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -1196,12 +1208,13 @@ form:focus-within {
 
 .contacts__input {
 
-      width: 100%;
+    width: 100%;
     height: 40px;
     border: none;
     border-bottom: 1px solid #eee;
     padding: 0 15px;
-     margin-bottom: 10px;
+    margin-bottom: 10px;
+    border: none;
 		}
 .contacts__submit {
       margin-top: 20px;
@@ -1267,11 +1280,11 @@ form:focus-within {
     font-size: 14px;
     font-weight: 500;
     padding-right: 100px;
-    background-color: #071e26;
+    /* background-color: #071e26; */
 
   }
 .subscribe-form-black__placeholder{
-    background-color: #071e26; 
+    /* background-color: #071e26;  */
     color: #ccc;
     input[type="search"]::-webkit-input-placeholder {
                 color: #ccc;
