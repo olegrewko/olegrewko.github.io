@@ -839,7 +839,7 @@ transition: all .4s;
  {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-end;
   margin-top: 10px;
   margin-bottom: 0px;
@@ -866,14 +866,20 @@ transition: all .4s;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 10px;
 }
-
+.heat__inner-cc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
 .septic__inner {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   margin-bottom: 10px;
 }
