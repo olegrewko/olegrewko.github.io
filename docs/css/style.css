@@ -743,6 +743,7 @@ a:hover {
 
 .header {
   width: 100%;
+
 }
 .header__top {
   position: fixed;
@@ -790,7 +791,7 @@ font-size: 16px;
   padding: 10px 5px;
 font-family: 'Montserrat';
 font-style: normal;
-font-weight: 600;
+font-weight: 700;
 font-size: 12px;
 line-height: 14px;
 color: #DBD9C2;
