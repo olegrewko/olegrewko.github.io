@@ -1171,7 +1171,7 @@ form:focus-within {
       width: 100%;
       display: grid;
       grid-template-columns: 1fr  1fr;
-      grid-template-rows: 500px;
+      grid-template-rows: 300px;
       column-gap: 20px;
       align-items: center;
 
@@ -1189,7 +1189,7 @@ form:focus-within {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start ;
-        padding-left: 0px;
+        padding-left: 10px;
       }
 
 .contacts__title {
