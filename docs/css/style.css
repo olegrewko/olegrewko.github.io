@@ -1,13 +1,7 @@
 /* Вместо локальных шрифтов используйте Google Fonts */
 
 :root {
-  /* --bg-color: #f5f5f5;
-  --text-color: #6c757d;
-  --accent-color: #ffd333;
-  --contrast-color: #3d464d;
-  --gray-color: #ccc;
-  --red-color: #ee6e73;
-  --light-grey-color: #eee; */
+ 
 
   --color-tundora: #2c3e50;
   --bauhaus-black: #000000;
@@ -41,7 +35,7 @@
   font-family: 'Rubik';
   font-weight: 900;
   line-height: 120%;
-  font-size: 40px;
+  font-size: 30px;
   color: var(--color-midnight);
 }
 
@@ -49,7 +43,7 @@
   font-family: 'Rubik';
   font-weight: 900;
   line-height: 100%;
-  font-size: 80px;
+  font-size: 20px;
   color: var(--color-midnight);
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
