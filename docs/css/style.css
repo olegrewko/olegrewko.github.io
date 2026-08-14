@@ -723,7 +723,7 @@ a:hover {
 .container1200 {
   max-width: 1200px;
   width: 100%;
-  /* padding: 5px 10px; */
+  height: auto;
   margin: 5px auto;
 
 
@@ -751,7 +751,7 @@ a:hover {
 .header {
   max-width: 1440px;
   width: 100%;
-
+  height: auto;
 }
 .header__top {
   position: fixed;
@@ -826,7 +826,7 @@ transition: all .4s;
 
 
 .top__contact {
-  max-width: 400px;
+  max-width: 700px;
   margin: 70px 5px 20px;
 }
 .header__content {
@@ -1244,7 +1244,7 @@ form:focus-within {
     border-bottom: 1px solid #eee;
     padding: 0 15px;
     margin-bottom: 10px;
-    border: none;
+
 		}
 .contacts__submit {
       margin-top: 0px;
@@ -1258,16 +1258,17 @@ form:focus-within {
         font-size: 12px;
         line-height: 14px;
         color: #DBD9C2;
-      border: none;
-
-      background-color: black;
+      border-radius: 4px;
+      border: 2px solid var(--gray-700);
+      background-color: var(--gray-700);
       transition: all 0.3s;
       cursor: pointer;
 
      &:hover{
-      color: black;
+      color: #555;
       background-color: #fff;
-      border: 2px solid #ccc;
+      border: 2px solid var(--gray-700);
+      border-radius: 4px;
       transition: all 0.3s;
       cursor: pointer;
      }
@@ -1951,8 +1952,238 @@ pl-10 {
 .footer__bottom {
   padding-top: 5px;
 }
+/* ========== SPECS TABLE ========== */
+/* .specs-table {
+  display: flex;
+  gap: 0px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
 
+.table-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 
+.table-row {
+  display: flex;
+  border-bottom: 1px solid #eaeaea;
+  min-height: 60px;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-cell {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header-cell {
+  background: #f8f9fa;
+  font-weight: bold;
+  min-width: 200px;
+  border-right: 1px solid #eaeaea;
+  align-items: center;
+}
+
+.header-cell h5 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.table-cell p {
+  margin: 0;
+  color: #555;
+  line-height: 120%;
+  font-size: 14px;
+} */
+/* ===== Контейнер ===== */
+/* .container1200 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+} */
+
+/* ===== Таблица ===== */
+.specs-table {
+  display: flex;
+  flex-wrap: wrap;
+  /* для адаптивности */
+  gap: 0;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+}
+
+/* ===== Каждая колонка ===== */
+.table-column {
+  flex: 1 1 33.333%;
+  /* ровно 3 колонки */
+  min-width: 250px;
+  /* чтобы не сжимались слишком сильно */
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #eaeaea;
+}
+
+/* Убираем правую границу у последней колонки */
+.table-column:last-child {
+  border-right: none;
+}
+
+/* ===== Заголовок колонки ===== */
+.column-title {
+  background: #f8f9fa;
+  margin: 0;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c3e50;
+  border-bottom: 2px solid #eaeaea;
+  text-align: center;
+}
+
+/* ===== Строка ===== */
+.table-row {
+  display: flex;
+  border-bottom: 1px solid #eaeaea;
+  min-height: 40px;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+/* ===== Ячейка ===== */
+.text-right {
+  text-align: right;
+}
+.table-cell {
+  flex: 1;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.table-cell-r {
+  flex: 1;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 600;
+  line-height: 1.2;
+    font-size: 14px;
+}
+/* ===== Ячейка-заголовок (левая часть) ===== */
+.header-cell {
+  background: #f8f9fa;
+  font-weight: 600;
+  flex: 0 0 40%;
+  /* фиксированная ширина для заголовков */
+  border-right: 1px solid #eaeaea;
+}
+
+/* ===== Текст внутри ячеек ===== */
+.header-cell h5 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.table-cell p {
+  margin: 0;
+  color: #555;
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+/* ===== Кнопка ===== */
+/* .contacts__submit {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.contacts__submit:hover {
+  background: #fff;
+  color: #000;
+  border: 3px solid gray;
+} */
+
+/* ===== Адаптивность ===== */
+
+/* Планшеты — 2 колонки */
+@media (max-width: 992px) {
+  .table-column {
+    flex: 1 1 50%;
+    min-width: 200px;
+  }
+
+  /* Убираем правую границу у чётных колонок */
+  .table-column:nth-child(2) {
+    border-right: none;
+  }
+
+  /* Добавляем нижнюю границу между рядами колонок */
+  .table-column:nth-child(1),
+  .table-column:nth-child(2) {
+    border-bottom: 2px solid #eaeaea;
+  }
+}
+
+/* Телефоны — 1 колонка */
+@media (max-width: 600px) {
+  .table-column {
+    flex: 1 1 100%;
+    border-right: none;
+    border-bottom: 2px solid #eaeaea;
+  }
+
+  .table-column:last-child {
+    border-bottom: none;
+  }
+
+  .header-cell {
+    flex: 0 0 35%;
+  }
+
+  .column-title {
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+
+  .table-cell {
+    padding: 10px 12px;
+  }
+
+  .header-cell h5,
+  .table-cell p {
+    font-size: 13px;
+  }
+}
+/* ========== SPECS TABLE ========== */
 
 
 @media (max-width: 768px) {
