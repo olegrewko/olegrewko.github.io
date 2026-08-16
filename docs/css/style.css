@@ -33,7 +33,7 @@
 }
 .title-6r {
   font-family: 'Rubik';
-  font-weight: 900;
+  font-weight: 800;
   line-height: 120%;
   font-size: 16px;
   color: var(--color-midnight);
@@ -43,7 +43,7 @@
   font-family: 'Rubik';
   font-weight: 900;
   line-height: 100%;
-  font-size: 20px;
+  font-size: 16px;
   color: var(--color-midnight);
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -543,7 +543,7 @@ li {
     display: none;
 }
 /* styles */
-/* @font-face {
+ @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 800;
@@ -570,8 +570,8 @@ li {
    url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
    url('../fonts/Montserrat-SemiBold.woff') format('woff');
   font-display: swap;
-} */
-/* @font-face {
+}
+ @font-face {
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 900;
@@ -579,8 +579,17 @@ li {
     url('../fonts/Rubik-Black.woff2') format('woff2'),
     url('../fonts/Rubik-Black.woff') format('woff');
   font-display: swap;
-} */
-/* @font-face {
+}
+ @font-face {
+   font-family: 'Rubik';
+   font-style: normal;
+   font-weight: 800;
+   src: local('Rubik-Black'),
+     url('../fonts/Rubik-Bold.woff2') format('woff2'),
+     url('../fonts/Rubik-Bold.woff') format('woff');
+   font-display: swap;
+ }
+ @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -597,23 +606,14 @@ li {
    url('../fonts/Montserrat-Regular.woff2') format('woff2'),
    url('../fonts/Montserrat-Regular.woff') format('woff');
   font-display: swap;
-} */
+}
 
 * {
   box-sizing: border-box;
 }
-.project,
-.job,
-.job02,
-.t,
-.heat,
-.septic,
-.blog,
-.video,
-.team,
-.contact
+.container1200
  {
-  padding-top: 100px;
+  margin-top: 150px;
  }
  .center {
   text-align: center;
@@ -738,7 +738,7 @@ a:hover {
   max-width: 1440px;
   width: 100%;
   /* padding: 5px 10px; */
-  margin: 5px auto;
+  margin: 0 auto;
 
 
 }
@@ -751,7 +751,7 @@ a:hover {
 .header {
   max-width: 1440px;
   width: 100%;
-  height: auto;
+  min-height: 60px;
 }
 .header__top {
   position: fixed;
@@ -820,7 +820,7 @@ color: orange;
 transition: all .4s;
 }
 .menu__list-link:hover {
- color: tomato;
+ color: crimson;
 
 }
 
