@@ -23,18 +23,6 @@
 /* ============================================================
    RESET & BASE
    ============================================================ */
-/* ============================================================
-   FIX: Убираем горизонтальную прокрутку
-   ============================================================ */
-html,
-body {
-  overflow-x: hidden;
-  max-width: 100%;
-}
-
-* {
-  max-width: 100%;
-}
 * {
   margin: 0;
   padding: 0;
@@ -300,7 +288,7 @@ input {
 .header {
   max-width: 1440px;
   width: 100%;
-  min-height: 60px;
+  min-height: 90px;
 }
 
 .header__top {
@@ -313,6 +301,9 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* min-height: 90px; */
+  height: 90px;
+    /* чтобы не было конфликтов */
 }
 
 .header__top-inner {
@@ -324,6 +315,7 @@ input {
   width: 100%;
   max-width: 1440px;
   padding: 0 15px;
+  height: 100%;
 }
 
 .menu__list {
@@ -379,9 +371,80 @@ input {
 /* ============================================================
    SLIDER
    ============================================================ */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: '';
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.slick-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  /* ← ограничиваем высоту */
+  object-fit: cover;
+  /* ← чтобы картинка красиво вписалась */
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* ===== Контейнер слайдера ===== */
 .slider-blog__inner {
   background-color: rgba(4, 4, 4, 1);
   padding: 10px 0;
+  max-height: 650px;
+  /* ← ограничиваем высоту всего блока */
+  overflow: hidden;
 }
 
 .slider-blog__item {
@@ -394,13 +457,52 @@ input {
   width: 100%;
   margin: 0 auto;
   display: block;
+  max-height: 600px;
+  object-fit: cover;
 }
 
-/* Slick Dots */
+/* ===== Точки навигации ===== */
 .slick-dots {
-  display: flex;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0 5px;
+  margin: 0;
+  list-style: none;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  width: 16px;
+  height: 6px;
+  border: none;
+  background: #555;
+  font-size: 0;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0;
+  transition: all 0.3s;
+}
+
+.slick-dots .slick-active button {
+  width: 30px;
+  background: crimson;
+}
+
+.slick-dots li+li {
+  margin-left: 10px;
+}
+
+/* ===== Точки навигации ===== */
+/* .slick-dots {
+  display: flex !important;
   justify-content: center;
   align-items: flex-start;
+  padding: 10px 0;
 }
 
 .slick-dots button {
@@ -409,18 +511,19 @@ input {
   border: none;
   background: #242121;
   font-size: 0;
+  cursor: pointer;
 }
 
 .slick-active button {
   width: 16px;
   height: 6px;
   border: none;
-  background: tomato;
+  background: crimson;
 }
 
 .slick-dots li+li {
   margin-left: 10px;
-}
+} */
 
 /* ============================================================
    BUTTONS
@@ -704,134 +807,7 @@ input {
   text-indent: 100%;
   background: url('../img/up.png') no-repeat 0px 0px;
 }
-/* ============================================================
-   SLIDER
-   ============================================================ */
-.slick-slider {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  user-select: none;
-  touch-action: pan-y;
-}
 
-.slick-list {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.slick-list.dragging {
-  cursor: pointer;
-  cursor: hand;
-}
-
-.slick-track {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slick-track:before,
-.slick-track:after {
-  display: table;
-  content: '';
-}
-
-.slick-track:after {
-  clear: both;
-}
-
-.slick-slide {
-  display: none;
-  float: left;
-  height: 100%;
-  min-height: 1px;
-}
-
-.slick-slide img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 600px;
-  /* ← ограничиваем высоту */
-  object-fit: cover;
-  /* ← чтобы картинка красиво вписалась */
-}
-
-.slick-initialized .slick-slide {
-  display: block;
-}
-
-.slick-vertical .slick-slide {
-  display: block;
-  height: auto;
-  border: 1px solid transparent;
-}
-
-/* ===== Контейнер слайдера ===== */
-.slider-blog__inner {
-  background-color: rgba(4, 4, 4, 1);
-  padding: 10px 0;
-  max-height: 650px;
-  /* ← ограничиваем высоту всего блока */
-  overflow: hidden;
-}
-
-.slider-blog__item {
-  padding: 0;
-  margin: 0 auto;
-}
-
-.slider-blog__img {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  display: block;
-  max-height: 600px;
-  object-fit: cover;
-}
-
-/* ===== Точки навигации ===== */
-.slick-dots {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 0 5px;
-  margin: 0;
-  list-style: none;
-}
-
-.slick-dots li {
-  display: inline-block;
-  margin: 0 5px;
-}
-
-.slick-dots button {
-  width: 16px;
-  height: 6px;
-  border: none;
-  background: #555;
-  font-size: 0;
-  cursor: pointer;
-  border-radius: 3px;
-  padding: 0;
-  transition: all 0.3s;
-}
-
-.slick-dots .slick-active button {
-  width: 30px;
-  background: crimson;
-}
-
-.slick-dots li+li {
-  margin-left: 10px;
-}
 /* ============================================================
    RESPONSIVE
    ============================================================ */

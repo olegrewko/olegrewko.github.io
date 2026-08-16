@@ -18,26 +18,46 @@ $(function () {
 
 
 
+  // $('.slider-blog__inner').slick({
+  //   arrows: false,
+  //   prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow-left.svg" alt="img/arrow-left.svg" /></button>',
+  //   nextArrow: '<button type="button" class="slick-next"><img src="img/arrow-right.svg" alt="img/arrow-right.svg" /></button>',
+  //   dots: true,
+  //   autoplay: true,
+  //   autoplaySpeed: 3000,
+  //   fade: true,
+  //   responsive: [{
+  //       breakpoint: 768,
+  //       settings: {
+
+  //         arrows: false
+
+  //       }
+  //     },
+
+  //   ]
+  // });
+
+  // ===== ИНИЦИАЛИЗАЦИЯ СЛАЙДЕРА =====
   $('.slider-blog__inner').slick({
-    arrows: false,
-    prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow-left.svg" alt="img/arrow-left.svg" /></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="img/arrow-right.svg" alt="img/arrow-right.svg" /></button>',
+    arrows: false,          // убрали стрелки, чтобы не было ошибок
     dots: true,
     autoplay: true,
     autoplaySpeed: 3000,
     fade: true,
-    responsive: [{
+    infinite: true,         // зацикливание
+    speed: 500,
+    responsive: [
+      {
         breakpoint: 768,
         settings: {
-
-          arrows: false
-
+          arrows: false,
+          dots: true,
+          fade: true
         }
-      },
-
+      }
     ]
   });
-
 
   $('.menu__btn, .menu a').on('click', function name() {
     $('.menu__list').toggleClass('menu__list--active');
@@ -45,5 +65,5 @@ $(function () {
 
   });
 
-  
+
 });
