@@ -313,6 +313,8 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 60px;
+    /* ← или min-height: 90px */
 }
 
 .header__top-inner {
@@ -324,6 +326,8 @@ input {
   width: 100%;
   max-width: 1440px;
   padding: 0 15px;
+  height: 100%;
+    /* ← чтобы растянуть по высоте родителя */
 }
 
 .menu__list {
@@ -377,49 +381,248 @@ input {
 }
 
 /* ============================================================
-   SLIDER
+   SLICK SLIDER — обязательные стили для работы
    ============================================================ */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: '';
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.slick-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* ============================================================
+   СТИЛИ СЛАЙДЕРА
+   ============================================================ */
+
+/* Контейнер слайдера */
 .slider-blog__inner {
   background-color: rgba(4, 4, 4, 1);
   padding: 10px 0;
+  position: relative;
 }
 
+/* Каждый слайд */
 .slider-blog__item {
   padding: 0;
   margin: 0 auto;
 }
 
+/* Картинка внутри слайда */
 .slider-blog__img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
   display: block;
+  border-radius: 8px;
 }
 
-/* Slick Dots */
+/* ===== Точки навигации ===== */
 .slick-dots {
-  display: flex;
+  display: flex !important;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  padding: 15px 0 5px;
+  margin: 0;
+  list-style: none;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
 }
 
 .slick-dots button {
   width: 16px;
   height: 6px;
   border: none;
-  background: #242121;
+  background: #555;
   font-size: 0;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0;
+  transition: all 0.3s;
 }
 
-.slick-active button {
-  width: 16px;
-  height: 6px;
-  border: none;
-  background: tomato;
+.slick-dots .slick-active button {
+  width: 30px;
+  background: crimson;
 }
 
 .slick-dots li+li {
   margin-left: 10px;
+}
+
+/* ============================================================
+   СТРЕЛКИ (если понадобятся)
+   ============================================================ */
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-prev {
+  left: 15px;
+}
+
+.slick-next {
+  right: 15px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 24px;
+  line-height: 1;
+  color: #fff;
+}
+
+.slick-prev:before {
+  content: '←';
+}
+
+.slick-next:before {
+  content: '→';
+}
+
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled {
+  opacity: 0.2;
+  cursor: default;
+}
+
+/* ============================================================
+   АДАПТИВНОСТЬ
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .slider-blog__img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+
+  .slick-dots li button {
+    width: 30px;
+    height: 3px;
+  }
+
+  .slick-dots li.slick-active button {
+    width: 40px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-blog__inner {
+    padding: 5px 0;
+  }
+
+  .slick-dots {
+    padding: 10px 0 5px;
+    gap: 5px;
+  }
+
+  .slick-dots li button {
+    width: 20px;
+    height: 3px;
+  }
+
+  .slick-dots li.slick-active button {
+    width: 30px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 /* ============================================================
